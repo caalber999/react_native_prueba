@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1729617439639" clover="3.2.0">
+  <project timestamp="1729617439639" name="All files">
+    <metrics statements="34" coveredstatements="28" conditionals="4" coveredconditionals="3" methods="14" coveredmethods="9" elements="52" coveredelements="40" complexity="0" loc="34" ncloc="34" packages="2" files="4" classes="4"/>
+    <package name="screens">
+      <metrics statements="29" coveredstatements="23" conditionals="4" coveredconditionals="3" methods="13" coveredmethods="8"/>
+      <file name="ListadoScreen.tsx" path="C:\Users\usuario\Desktop\proyecto\nuevo\react native\mytest\src\screens\ListadoScreen.tsx">
+        <metrics statements="13" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="2"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+      </file>
+      <file name="TasksScreen.tsx" path="C:\Users\usuario\Desktop\proyecto\nuevo\react native\mytest\src\screens\TasksScreen.tsx">
+        <metrics statements="16" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="7" coveredmethods="6"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="6" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="14" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="31" count="5" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="store">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="store.ts" path="C:\Users\usuario\Desktop\proyecto\nuevo\react native\mytest\src\store\store.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="tasksSlice.ts" path="C:\Users\usuario\Desktop\proyecto\nuevo\react native\mytest\src\store\tasksSlice.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

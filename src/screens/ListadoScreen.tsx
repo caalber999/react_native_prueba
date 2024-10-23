@@ -12,25 +12,26 @@ const ListadoScreen = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    console.log('Llamando a fetch...');
     fetch('https://6172cfe5110a740017222e2b.mockapi.io/elements')
       .then((response) => response.json())
       .then((data: Element[]) => {
-        setData(data);
-        setLoading(false);
+        setData(data); // Actualiza los datos
+        setLoading(false); // Cambia el estado de carga
       });
   }, []);
 
   return (
     <View style={styles.container}>
       {loading ? (
-        <ActivityIndicator size="large" />
+        <ActivityIndicator size="large" testID="loading-indicator" />
       ) : (
         <FlatList
           data={data}
           renderItem={({ item }) => (
             <View style={styles.itemContainer}>
               <Image source={{ uri: item.avatar }} style={styles.avatar} />
-              <Text style={styles.name}>{item.name}</Text>
+              <Text style={styles.name}>{item.name}</Text> {/* Renderiza los nombres */}
             </View>
           )}
           keyExtractor={(item) => item.id.toString()}
@@ -46,29 +47,26 @@ const styles = StyleSheet.create({
     padding: 20,
   },
   itemContainer: {
-    flexDirection: 'row', // Alinea los elementos en fila
-    alignItems: 'center', // Centra verticalmente
-    marginBottom: 15, // Espacio entre elementos
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 15,
     padding: 10,
-    backgroundColor: 'white', // Color de fondo para cada elemento
-    borderRadius: 8, // Bordes redondeados
-    shadowColor: '#000', // Sombra para cada elemento
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
+    backgroundColor: 'white',
+    borderRadius: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 4,
-    elevation: 3, // Sombra en Android
+    elevation: 3,
   },
   avatar: {
-    width: 50, // Ancho del avatar
-    height: 50, // Alto del avatar
-    borderRadius: 25, // Hacer el avatar circular
-    marginRight: 15, // Espacio a la derecha del avatar
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    marginRight: 15,
   },
   name: {
-    fontSize: 18, // Tamaño de fuente del nombre
+    fontSize: 18,
   },
 });
 
